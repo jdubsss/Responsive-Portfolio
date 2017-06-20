@@ -8,44 +8,33 @@ body {
 
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
-/* general */
+/* sticky footer styling */
 
-.container {
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
-  clear: both;
+/* http://ryanfait.com/html5-sticky-footer/ */
+
+html,
+body {
+  height: 100%;
 }
 
-@media only screen and (min-width:980px) and (max-width: 1440px) {
-  .container{
-    width: 727px;
-      }
+.wrapper {
+  height: auto !important;
+  height: 100%;
+  min-height: 100%;
+  margin: 0 auto -105px;
 }
 
-@media only screen and (min-width:768px) and (max-width: 979px) {
- .container {
-    width: 728px;
-    margin: 0px 20px;
-     }
+footer,
+.push {
+  height: 105px;
 }
 
-@media only screen and (max-width: 767px) {
-  .container {
-    width: 600px;
-     }
-}
+/* end sticky footer styling */
 
-@media only screen and (max-width: 640px) {
-  .container  {
-    width: 600px;
-  }
-
-
-}
-
+/* start hover styling */
 
 #logo:hover,
 input[type=submit]:hover {
@@ -59,6 +48,17 @@ nav a:hover {
 .social:hover {
   cursor: pointer;
   opacity: 0.8;
+}
+
+/* end hover styling */
+
+/* general styling */
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  clear: both;
 }
 
 h1,
@@ -132,14 +132,11 @@ nav a {
   color: #999;
   text-decoration: none;
   border-left: 1px solid #efefef;
-
 }
 
 nav a:first-child {
   border-left: 0 none;
 }
-
-
 
 /* footer */
 
@@ -185,14 +182,11 @@ h3,
   margin-right: 0;
 }
 
-
-
 /* main */
 
 #main-container {
   padding-top: 130px;
 }
-
 
 .main-section {
   float: left;
@@ -202,58 +196,6 @@ h3,
   margin: 0 0 40px;
   background: #fff;
   border: 1px solid #ddd;
-}
-
-
-
-
-/* portfolio page */
-
-.work {
-  position: relative;
-  float: left;
-  width: 274px;
-  margin: 20px 0 25px;
-  overflow: auto;
-}
-
-.work:nth-child(even) {
-  margin-right: 40px;
-}
-
-.work img {
-  width: 100%;
-  border: 0 none;
-  opacity: 0.8;
-}
-
-.work h3 {
-  position: absolute;
-  bottom: 20px;
-  width: 100%;
-  padding: 15px;
-  margin-bottom: 0;
-  font-weight: 300;
-  line-height: 30px;
-  color: #fff;
-  text-align: center;
-  background: #4aaaa5;
-  border-bottom: 0;
-}
-
-
-
-.work:hover {
-  cursor: pointer;
-  opacity: 0.8;
-}
-
-.auth-image {
-  float: left;
-  width: 200px;
-  height: auto;
-  margin-top: 10px;
-  margin-right: 25px;
 }
 
 /* contact page */
@@ -294,106 +236,4 @@ input[type=submit] {
   cursor: pointer;
   background: #4aaaa5;
   border: 0 none;
-}
-
-
-/* media tags */
-
-@media only screen and (max-width:980px) {
-.main-section {
-    float: left;
-    width: 420px;
-   max-width: 420px
-    padding: 30px;
-    margin-bottom: 20px;
-    background: #fff;
-    border: 1px solid #ddd;
-  }
-  
-  .sidebar {
-  float: right;
-  width: 100%;
-  max-width: 270px;
-  padding: 30px;
-  margin-bottom: 20px;
-  background: #fff;
-  border: 1px solid #ddd;
-}
-
-}
-
-@media only screen and (max-width: 768px) {
-.main-section {
-  float: none;
-  width: 708px;
-  max-width: none; 
-  padding: 30px;
-  margin: 0px 30px;
-  background: #fff;
-  border: 1px solid #ddd;
-  }
-
-  .sidebar {
-  float: none;
-  width: 100%;
-  max-width: none;
-  padding: 30px;
-  margin-bottom: 20px;
-    background: #fff;
-    border: 1px solid #ddd;
-  }
-
-
-}
-
-
-
-@media only screen and (max-width: 640px) {
-  
-  nav,nav a {
-  display: inline-block;    
-  clear: both;
-  align-content: center;
-  float: none;
-  }  
-
-  nav {
-  display: inline-block;
-  text-align: center;
-  width: 100%;
-  margin: 10px 0px;
-  padding: none;
-  }  
-
-  nav a {
-  display: inline-block;
-/*  text-align: center;
-*/  width: 100%;
-  margin: 10px 0px;
-  padding: auto;  }
-  
-.main-section {
-    float: right;
-    width: 100%;
-  
-    padding: 30px;
-    margin: 30px 0 40px;
-    background: #fff;
-    border: 1px solid #ddd;
-  }
-
-  .sidebar {
-    float: right;
-    width: 100%;
-    max-width: none;
-    padding: 30px;
-    margin-bottom: 20px;
-    background: #fff;
-    border: 1px solid #ddd;
-  }
-
-  #logo {
-  clear: both;
-  width: 100%;
-  } 
 }
