@@ -19,32 +19,7 @@ body {
   clear: both;
 }
 
-@media only screen and (min-width:980px) and (max-width: 1440px) {
-  .container{
-    width: 727px;
-      }
-}
 
-@media only screen and (min-width:768px) and (max-width: 979px) {
- .container {
-    width: 728px;
-    margin: 0px 20px;
-     }
-}
-
-@media only screen and (max-width: 767px) {
-  .container {
-    width: 600px;
-     }
-}
-
-@media only screen and (max-width: 640px) {
-  .container  {
-    width: 600px;
-  }
-
-
-}
 
 
 #logo:hover,
@@ -297,9 +272,30 @@ input[type=submit] {
 }
 
 
-/* media tags */
+/* ------------------ media tags ----------------- */
 
-@media only screen and (max-width:980px) {
+@media only screen and (max-width: 979px) {
+ .container {
+    width: 728px;
+    
+     }
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    width: 600px;
+     }
+}
+
+@media only screen and (max-width: 640px) {
+  .container  {
+    width: 600px;
+  }
+
+
+}
+
+@media only screen and (max-width:979px) {
 .main-section {
     float: left;
     width: 420px;
@@ -325,20 +321,20 @@ input[type=submit] {
 @media only screen and (max-width: 768px) {
 .main-section {
   float: none;
-  width: 708px;
+  width: 100%;
   max-width: none; 
   padding: 30px;
-  margin: 0px 30px;
+  /*margin: 0px 30px;*/
   background: #fff;
   border: 1px solid #ddd;
   }
 
   .sidebar {
-  float: none;
-  width: 100%;
-  max-width: none;
-  padding: 30px;
-  margin-bottom: 20px;
+    float: none;
+    width: 100%;
+    max-width: none;
+    padding: 30px;
+    margin: 30px 0;
     background: #fff;
     border: 1px solid #ddd;
   }
@@ -368,16 +364,14 @@ input[type=submit] {
   nav a {
   display: inline-block;
 /*  text-align: center;
-*/  width: 100%;
+*/  width: 30%;
   margin: 10px 0px;
   padding: auto;  }
   
 .main-section {
     float: right;
     width: 100%;
-  
-    padding: 30px;
-    margin: 30px 0 40px;
+    margin: 30px 0;
     background: #fff;
     border: 1px solid #ddd;
   }
