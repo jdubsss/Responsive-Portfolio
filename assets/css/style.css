@@ -274,26 +274,7 @@ input[type=submit] {
 
 /* ------------------ media tags ----------------- */
 
-@media only screen and (max-width: 979px) {
- .container {
-    width: 728px;
-    
-     }
-}
 
-@media only screen and (max-width: 767px) {
-  .container {
-    width: 600px;
-     }
-}
-
-@media only screen and (max-width: 640px) {
-  .container  {
-    width: 600px;
-  }
-
-
-}
 
 @media only screen and (max-width:979px) {
 .main-section {
@@ -315,6 +296,11 @@ input[type=submit] {
   background: #fff;
   border: 1px solid #ddd;
 }
+
+ .container {
+    width: 728px;
+    
+     }
 
 }
 
@@ -339,6 +325,9 @@ input[type=submit] {
     border: 1px solid #ddd;
   }
 
+  .container {
+    width: 600px;
+     }
 
 }
 
@@ -369,7 +358,7 @@ input[type=submit] {
   padding: auto;  }
   
 .main-section {
-    float: right;
+    float: left;
     width: 100%;
     margin: 30px 0;
     background: #fff;
@@ -390,4 +379,9 @@ input[type=submit] {
   clear: both;
   width: 100%;
   } 
+
+    .container  {
+    width: 600px;
+  }
+
 }
