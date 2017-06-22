@@ -313,10 +313,11 @@ input[type=submit] {
   /*margin: 0px 30px;*/
   background: #fff;
   border: 1px solid #ddd;
+  height: 100%;
   }
 
   .sidebar {
-    float: none;
+    float: right;
     width: 100%;
     max-width: none;
     padding: 30px;
@@ -328,6 +329,10 @@ input[type=submit] {
   .container {
     width: 600px;
      }
+
+  .work {
+  
+  float: none;
 
 }
 
